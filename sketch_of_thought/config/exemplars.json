@@ -1,0 +1,218 @@
+{
+   "EN": {
+      "conceptual_chaining": [
+         {
+            "question": "What is the name of the currency used in Seoul?",
+            "answer": "<think>\n#Seoul \u2192 #South_Korea \u2192 Won\n</think>\n\\boxed{Korean Won}"
+         },
+         {
+            "question": "Which planet has the highest surface temperature?\nChoices:\nA) Mercury\nB) Venus\nC) Mars\nD) Jupiter",
+            "answer": "<think>\n#heat_trap\nMercury \u2192 no atmosphere \u2192 loses heat\nVenus \u2192 thick CO2 \u2192 traps heat \u2192 hottest\nMars \u2192 thin CO2 \u2192 cold\nJupiter \u2192 no solid surface\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "Which vitamin is essential for blood clotting?",
+            "answer": "<think>\n#blood_clotting \u2192 #vitamin_K\n</think>\n\\boxed{Vitamin K}"
+         }
+      ],
+      "chunked_symbolism": [
+         {
+            "question": "A car accelerates at 2.5 m/s^2 for 10 seconds. If its initial velocity was 15 m/s, what is its final velocity?",
+            "answer": "<think>\na = 2.5 m/s^2\nt = 10 s\nvi = 15 m/s\nvf = 15 + (2.5 \u00d7 10)\nvf = 40 m/s\n</think>\n\\boxed{40}"
+         },
+         {
+            "question": "If a product costs $120 and there is a 15% discount, what is the final price?\nChoices:\nA) $10\nB) $97\nC) 102",
+            "answer": "<think>\nop = 120\nd = 15%\ndp = 120 \u00d7 (15 / 100) = 18\nfp = 120 - 18 = 102\n</think>\n\\boxed{C}"
+         },
+         {
+            "question": "Question: A circuit has a voltage of 12V and a resistance of 4\u03a9. What is the current?",
+            "answer": "<think>\nV = 12V\nR = 4\u03a9\nI = 12 / 4 = 3A\n</think>\n\\boxed{3}"
+         }
+      ],
+      "expert_lexicons": [
+         {
+            "question": "Context: The discovery of the first interstellar object passing through the Solar System, 1I/2017 U1 ('Oumuamua), provoked intense and continuing interest from the scientific community and the general public.\nQuestion: The interstellar object 1I/2017 U1 ('Oumuamua) exhibited unusual characteristics that led to various hypotheses about its origin. What does the designation \"1I/2017 U1\" signify?\nChoices:\nA) 1st Intergalactic object detected in 2017, classified under category U1\nB) 1st Interstellar object cataloged, detected in 2017, following IAU naming conventions\nC) 1st Independent Unclassified body observed beyond Neptune in 2017",
+            "answer": "<think>\n1I \u2192 1st interstellar object\n2017 \u2192 Year detected\nU1 \u2192 Sequence ID\nIAU \u2192 Naming rules\n\u2234 1st cataloged interstellar object (2017)\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "A patient with STEMI is given MONA therapy. They have a history of being allergic to aspirin. Are they at risk with this treatment?",
+            "answer": "<think>\nSTEMI \u2192 ST-Elevation MI\nMONA \u2192 {Morphine, O2, Nitrates, Aspirin}\n\u2234 Aspirin \u2208 MONA\n</think>\n\\boxed{Yes}"
+         },
+         {
+            "question": "What does EBITDA measure?",
+            "answer": "<think>\nEBITDA \u2192 Earnings Before Interest, Taxes, Depreciation, Amortization\n\u2234 Measures Core Profitability\n</think>\n\\boxed{Core Profitability}"
+         }
+      ],
+      "cot": [
+         {
+            "question": "Question: \"If a train travels 60 miles per hour for 3 hours, how far does it go?\"",
+            "answer": "<think>\n1. I understand we need to find the total distance traveled by:\n\t- A train moving at 60 miles per hour\n\t- For a duration of 3 hours\n\n2. To calculate the distance, I'll use the formula:\n\t- Distance = Speed \u00d7 Time\n\t- Distance = 60 miles/hour \u00d7 3 hours\n\n3. Now I'll perform the calculation:\n\t- Distance = 60 \u00d7 3 = 180 miles\n\n4. Verification:\n\t- This makes sense because the train moves 60 miles each hour\n\t- After 3 hours, it will have covered 3 times that distance\n</think>\n\\boxed{180}"
+         },
+         {
+            "question": "Which planet has the highest surface temperature?\nChoices:\nA) Mercury\nB) Venus\nC) Mars\nD) Jupiter",
+            "answer": "<think>\n1. First, let's recall some basic facts about the planets listed:\n\t- Mercury: Closest to the Sun, no substantial atmosphere.\n\t- Venus: Second planet from the Sun, thick atmosphere with strong greenhouse effect.\n\t- Mars: Fourth planet from the Sun, thin atmosphere.\n\t- Jupiter: Fifth planet from the Sun, gas giant with no solid surface.\n\n2. Consider the factors affecting surface temperature:\n\t- Proximity to the Sun.\n\t- Atmospheric composition and thickness.\n\t- Presence of a solid surface to measure temperature on.\n\n3. Evaluate each planet:\n\t- Mercury: Despite being closest to the Sun, its lack of atmosphere means it experiences extreme temperature variations between day and night.\n\t- Venus: Its thick atmosphere traps heat due to a strong greenhouse effect, leading to very high surface temperatures.\n\t- Mars: Being farther from the Sun and having a thin atmosphere results in lower temperatures.\n\t- Jupiter: As a gas giant, it doesn't have a solid surface, so it doesn't fit the criteria for \"surface\" temperature comparison.\n\n4. Conclusion:\n\t- Among the planets with a solid surface, Venus has the highest surface temperature due to its dense atmosphere trapping heat.\n</think>\n\\boxed{B}"
+         }
+      ]
+   },
+   "KR": {
+      "conceptual_chaining": [
+         {
+            "question": "\uc11c\uc6b8\uc5d0\uc11c \uc0ac\uc6a9\ub418\ub294 \ud1b5\ud654\uc758 \uc774\ub984\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+            "answer": "<think>\n#\uc11c\uc6b8 \u2192 #\ub300\ud55c\ubbfc\uad6d \u2192 \uc6d0\n</think>\n\\boxed{\ub300\ud55c\ubbfc\uad6d \uc6d0}"
+         },
+         {
+            "question": "\ud45c\uba74 \uc628\ub3c4\uac00 \uac00\uc7a5 \ub192\uc740 \ud589\uc131\uc740 \ubb34\uc5c7\uc778\uac00\uc694?\n\uc120\ud0dd\uc9c0:\nA) \uc218\uc131\nB) \uae08\uc131\nC) \ud654\uc131\nD) \ubaa9\uc131",
+            "answer": "<think>\n#\uc5f4_\uac00\ub450\uae30\n\uc218\uc131 \u2192 \ub300\uae30 \uc5c6\uc74c \u2192 \uc5f4 \uc190\uc2e4\n\uae08\uc131 \u2192 \ub450\uaebc\uc6b4 CO2 \u2192 \uc5f4 \uac00\ub460 \u2192 \uac00\uc7a5 \ub728\uac70\uc6c0\n\ud654\uc131 \u2192 \uc587\uc740 CO2 \u2192 \ucd94\uc6c0\n\ubaa9\uc131 \u2192 \uace0\uccb4 \ud45c\uba74 \uc5c6\uc74c\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "\ud608\uc561 \uc751\uace0\uc5d0 \ud544\uc218\uc801\uc778 \ube44\ud0c0\ubbfc\uc740 \ubb34\uc5c7\uc778\uac00\uc694?",
+            "answer": "<think>\n#\ud608\uc561_\uc751\uace0 \u2192 #\ube44\ud0c0\ubbfc_K\n</think>\n\\boxed{\ube44\ud0c0\ubbfc K}"
+         }
+      ],
+      "chunked_symbolism": [
+         {
+            "question": "\uc790\ub3d9\ucc28\uac00 2.5 m/s^2\uc758 \uac00\uc18d\ub3c4\ub85c 10\ucd08 \ub3d9\uc548 \uac00\uc18d\ud569\ub2c8\ub2e4. \ucd08\uae30 \uc18d\ub3c4\uac00 15 m/s\uc600\ub2e4\uba74 \ucd5c\uc885 \uc18d\ub3c4\ub294 \uc5bc\ub9c8\uc785\ub2c8\uae4c?",
+            "answer": "<think>\na = 2.5 m/s^2\nt = 10 s\nvi = 15 m/s\nvf = 15 + (2.5 \u00d7 10)\nvf = 40 m/s\n</think>\n\\boxed{40}"
+         },
+         {
+            "question": "\uc0c1\ud488\uc758 \uac00\uaca9\uc774 $120\uc774\uace0 15% \ud560\uc778\uc774 \uc801\uc6a9\ub420 \uacbd\uc6b0 \ucd5c\uc885 \uac00\uaca9\uc740 \uc5bc\ub9c8\uc785\ub2c8\uae4c?\n\uc120\ud0dd\uc9c0:\nA) $10\nB) $97\nC) 102",
+            "answer": "<think>\nop = 120\nd = 15%\ndp = 120 \u00d7 (15 / 100) = 18\nfp = 120 - 18 = 102\n</think>\n\\boxed{C}"
+         },
+         {
+            "question": "\uc9c8\ubb38: \ud68c\ub85c\uc758 \uc804\uc555\uc774 12V\uc774\uace0 \uc800\ud56d\uc774 4\u03a9\uc77c \ub54c, \uc804\ub958\ub294 \uc5bc\ub9c8\uc785\ub2c8\uae4c?",
+            "answer": "<think>\nV = 12V\nR = 4\u03a9\nI = 12 / 4 = 3A\n</think>\n\\boxed{3}"
+         }
+      ],
+      "expert_lexicons": [
+         {
+            "question": "\ub9e5\ub77d: \ud0dc\uc591\uacc4\ub97c \ud1b5\uacfc\ud558\ub294 \uccab \ubc88\uc9f8 \uc131\uac04 \ucc9c\uccb4 1I/2017 U1 ('Oumuamua)\uc758 \ubc1c\uacac\uc740 \uacfc\ud559\uacc4\uc640 \ub300\uc911\uc758 \uac15\ud55c \uad00\uc2ec\uc744 \ubd88\ub7ec\uc77c\uc73c\ucf30\uc2b5\ub2c8\ub2e4.\n\uc9c8\ubb38: \uc131\uac04 \ucc9c\uccb4 1I/2017 U1 ('Oumuamua)\uc740 \uae30\uc6d0\uc5d0 \ub300\ud55c \ub2e4\uc591\ud55c \uac00\uc124\uc744 \ucd09\ubc1c\ud55c \ud2b9\uc774\ud55c \ud2b9\uc131\uc744 \ubcf4\uc600\uc2b5\ub2c8\ub2e4. \"1I/2017 U1\"\uc774\ub77c\ub294 \uba85\uce6d\uc740 \ubb34\uc5c7\uc744 \uc758\ubbf8\ud569\ub2c8\uae4c?\n\uc120\ud0dd\uc9c0:\nA) 2017\ub144\uc5d0 \ud0d0\uc9c0\ub41c \ucd5c\ucd08\uc758 \uc740\ud558 \uac04 \ucc9c\uccb4\ub85c, U1 \ubc94\uc8fc\ub85c \ubd84\ub958\ub428\nB) 2017\ub144\uc5d0 \ud0d0\uc9c0\ub418\uc5b4 \uad6d\uc81c\ucc9c\ubb38\uc5f0\ub9f9(IAU) \uba85\uba85\ubc95\uc744 \ub530\ub978 \ucd5c\ucd08\uc758 \uc131\uac04 \ucc9c\uccb4\ub85c \ub4f1\ub85d\ub428\nC) 2017\ub144\uc5d0 \ud574\uc655\uc131 \ub108\uba38\uc5d0\uc11c \uad00\uce21\ub41c \ucd5c\ucd08\uc758 \ub3c5\ub9bd\uc801\uc778 \ubbf8\ubd84\ub958 \ucc9c\uccb4",
+            "answer": "<think>\n1I \u2192 \ucd5c\ucd08\uc758 \uc131\uac04 \ucc9c\uccb4\n2017 \u2192 \ud0d0\uc9c0 \uc5f0\ub3c4\nU1 \u2192 \uc21c\ubc88 ID\nIAU \u2192 \uba85\uba85 \uaddc\uce59\n\u2234 2017\ub144 \ucd5c\ucd08\ub85c \ub4f1\ub85d\ub41c \uc131\uac04 \ucc9c\uccb4\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "STEMI \ud658\uc790\uac00 MONA \uce58\ub8cc\ub97c \ubc1b\uc558\uc2b5\ub2c8\ub2e4. \uadf8\ub7ec\ub098 \uc774 \ud658\uc790\ub294 \uc544\uc2a4\ud53c\ub9b0\uc5d0 \uc54c\ub808\ub974\uae30\uac00 \uc788\ub294 \ubcd1\ub825\uc774 \uc788\uc2b5\ub2c8\ub2e4. \uc774 \uce58\ub8cc\uac00 \uc704\ud5d8\ud560 \uac00\ub2a5\uc131\uc774 \uc788\uc2b5\ub2c8\uae4c?",
+            "answer": "<think>\nSTEMI \u2192 ST \ubd84\uc808 \uc0c1\uc2b9 \uc2ec\uadfc\uacbd\uc0c9 (ST-Elevation MI)\nMONA \u2192 {\ubaa8\ub974\ud540, \uc0b0\uc18c, \uc9c8\uc0b0\uc5fc, \uc544\uc2a4\ud53c\ub9b0}\n\u2234 \uc544\uc2a4\ud53c\ub9b0 \u2208 MONA\n</think>\n\\boxed{Yes}"
+         },
+         {
+            "question": "EBITDA\ub294 \ubb34\uc5c7\uc744 \uce21\uc815\ud558\ub098\uc694?",
+            "answer": "<think>\nEBITDA \u2192 \uc774\uc790, \uc138\uae08, \uac10\uac00\uc0c1\uac01 \ubc0f \ubb34\ud615\uc790\uc0b0\uc0c1\uac01 \uc804 \uc774\uc775\n\u2234 \ud575\uc2ec \uc218\uc775\uc131 \uce21\uc815\n</think>\n\\boxed{\ud575\uc2ec \uc218\uc775\uc131}"
+         }
+      ],
+      "cot": [
+         {
+            "question": "\uc9c8\ubb38: \"\uae30\ucc28\uac00 \uc2dc\uc18d 60\ub9c8\uc77c\ub85c 3\uc2dc\uac04 \ub3d9\uc548 \uc774\ub3d9\ud558\uba74, \ucd1d \uc5bc\ub9c8\ub098 \uc774\ub3d9\ud558\ub294\uac00?\"",
+            "answer": "<think>\n1. \uc6b0\ub9ac\ub294 \ucd1d \uc774\ub3d9 \uac70\ub9ac\ub97c \uad6c\ud574\uc57c \ud569\ub2c8\ub2e4:\n\t- \uae30\ucc28\ub294 \uc2dc\uc18d 60\ub9c8\uc77c\ub85c \uc774\ub3d9\ud569\ub2c8\ub2e4.\n\t- \uc774\ub3d9 \uc2dc\uac04\uc740 3\uc2dc\uac04\uc785\ub2c8\ub2e4.\n\n2. \uac70\ub9ac\ub97c \uacc4\uc0b0\ud558\uae30 \uc704\ud574 \ub2e4\uc74c \uacf5\uc2dd\uc744 \uc0ac\uc6a9\ud569\ub2c8\ub2e4:\n\t- \uac70\ub9ac = \uc18d\ub825 \u00d7 \uc2dc\uac04\n\t- \uac70\ub9ac = 60\ub9c8\uc77c/\uc2dc\uac04 \u00d7 3\uc2dc\uac04\n\n3. \uc774\uc81c \uacc4\uc0b0\uc744 \uc218\ud589\ud569\ub2c8\ub2e4:\n\t- \uac70\ub9ac = 60 \u00d7 3 = 180\ub9c8\uc77c\n\n4. \uac80\uc99d:\n\t- \uae30\ucc28\ub294 \ub9e4\uc2dc\uac04 60\ub9c8\uc77c\uc744 \uc774\ub3d9\ud569\ub2c8\ub2e4.\n\t- \ub530\ub77c\uc11c 3\uc2dc\uac04 \ud6c4\uc5d0\ub294 3\ubc30\uc758 \uac70\ub9ac\ub97c \uc774\ub3d9\ud558\uac8c \ub429\ub2c8\ub2e4.\n</think>\n\\boxed{180}"
+         },
+         {
+            "question": "\uc5b4\ub290 \ud589\uc131\uc774 \uac00\uc7a5 \ub192\uc740 \ud45c\uba74 \uc628\ub3c4\ub97c \uac00\uc9c0\uace0 \uc788\ub294\uac00?\n\uc120\ud0dd\uc9c0:\nA) \uc218\uc131\nB) \uae08\uc131\nC) \ud654\uc131\nD) \ubaa9\uc131",
+            "answer": "<think>\n1. \uba3c\uc800 \uc8fc\uc5b4\uc9c4 \ud589\uc131\ub4e4\uc5d0 \ub300\ud55c \uae30\ubcf8 \uc815\ubcf4\ub97c \ub5a0\uc62c\ub824 \ubd05\uc2dc\ub2e4:\n\t- \uc218\uc131: \ud0dc\uc591\uacfc \uac00\uc7a5 \uac00\uae4c\uc6b4 \ud589\uc131\uc774\uc9c0\ub9cc, \ub300\uae30\uac00 \uac70\uc758 \uc5c6\uc74c.\n\t- \uae08\uc131: \ud0dc\uc591\uc73c\ub85c\ubd80\ud130 \ub450 \ubc88\uc9f8 \ud589\uc131\uc774\uba70, \ub450\uaebc\uc6b4 \ub300\uae30\uc640 \uac15\ud55c \uc628\uc2e4\ud6a8\uacfc\uac00 \uc788\uc74c.\n\t- \ud654\uc131: \ud0dc\uc591\uc73c\ub85c\ubd80\ud130 \ub124 \ubc88\uc9f8 \ud589\uc131\uc774\uba70, \uc587\uc740 \ub300\uae30\ub97c \uac00\uc9d0.\n\t- \ubaa9\uc131: \ud0dc\uc591\uc73c\ub85c\ubd80\ud130 \ub2e4\uc12f \ubc88\uc9f8 \ud589\uc131\uc774\uba70, \uace0\uccb4 \ud45c\uba74\uc774 \uc5c6\ub294 \uac00\uc2a4\ud615 \ud589\uc131.\n\n2. \ud45c\uba74 \uc628\ub3c4\uc5d0 \uc601\ud5a5\uc744 \ubbf8\uce58\ub294 \uc694\uc778\uc744 \uace0\ub824\ud569\ub2c8\ub2e4:\n\t- \ud0dc\uc591\uacfc\uc758 \uac70\ub9ac.\n\t- \ub300\uae30\uc758 \uc870\uc131\uacfc \ub450\uaed8.\n\t- \uce21\uc815 \uac00\ub2a5\ud55c \uace0\uccb4 \ud45c\uba74\uc758 \uc874\uc7ac \uc5ec\ubd80.\n\n3. \uac01 \ud589\uc131\uc744 \ud3c9\uac00\ud569\ub2c8\ub2e4:\n\t- \uc218\uc131: \ud0dc\uc591\uacfc \uac00\uc7a5 \uac00\uae5d\uc9c0\ub9cc, \ub300\uae30\uac00 \uc5c6\uc5b4\uc11c \ub0ae\uacfc \ubc24\uc758 \uc628\ub3c4 \ucc28\uc774\uac00 \uadf9\uc2ec\ud568.\n\t- \uae08\uc131: \ub450\uaebc\uc6b4 \ub300\uae30\uac00 \uac15\ud55c \uc628\uc2e4\ud6a8\uacfc\ub97c \uc77c\uc73c\ucf1c \ub9e4\uc6b0 \ub192\uc740 \ud45c\uba74 \uc628\ub3c4\ub97c \uc720\uc9c0\ud568.\n\t- \ud654\uc131: \ud0dc\uc591\uc5d0\uc11c \uba40\uace0 \ub300\uae30\uac00 \uc587\uc544 \uc628\ub3c4\uac00 \ub0ae\uc74c.\n\t- \ubaa9\uc131: \uac00\uc2a4\ud615 \ud589\uc131\uc774\ubbc0\ub85c \"\ud45c\uba74\" \uc628\ub3c4\ub97c \ube44\uad50\ud558\ub294 \uac83\uc774 \uc801\uc808\ud558\uc9c0 \uc54a\uc74c.\n\n4. \uacb0\ub860:\n\t- \uace0\uccb4 \ud45c\uba74\uc774 \uc788\ub294 \ud589\uc131 \uc911\uc5d0\uc11c, \uae08\uc131\uc774 \ub450\uaebc\uc6b4 \ub300\uae30\ub85c \uc778\ud574 \uac00\uc7a5 \ub192\uc740 \ud45c\uba74 \uc628\ub3c4\ub97c \uac00\uc9d0.\n</think>\n\\boxed{B}"
+         }
+      ]
+   },
+   "IT": {
+      "conceptual_chaining": [
+         {
+            "question": "Qual \u00e8 il nome della valuta utilizzata a Seul?",
+            "answer": "<think>\n#Seul \u2192 #Corea_del_Sud \u2192 Won\n</think>\n\\boxed{Won sudcoreano}"
+         },
+         {
+            "question": "Quale pianeta ha la temperatura superficiale pi\u00f9 alta?\nOpzioni:\nA) Mercurio\nB) Venere\nC) Marte\nD) Giove",
+            "answer": "<think>\n#intrappolamento_del_calore\nMercurio \u2192 nessuna atmosfera \u2192 perde calore\nVenere \u2192 CO2 densa \u2192 intrappola calore \u2192 pi\u00f9 caldo\nMarte \u2192 CO2 sottile \u2192 freddo\nGiove \u2192 nessuna superficie solida\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "Quale vitamina \u00e8 essenziale per la coagulazione del sangue?",
+            "answer": "<think>\n#coagulazione_del_sangue \u2192 #vitamina_K\n</think>\n\\boxed{Vitamina K}"
+         }
+      ],
+      "chunked_symbolism": [
+         {
+            "question": "Un'auto accelera a 2,5 m/s^2 per 10 secondi. Se la sua velocit\u00e0 iniziale era di 15 m/s, qual \u00e8 la sua velocit\u00e0 finale?",
+            "answer": "<think>\na = 2,5 m/s^2\nt = 10 s\nvi = 15 m/s\nvf = 15 + (2,5 \u00d7 10)\nvf = 40 m/s\n</think>\n\\boxed{40}"
+         },
+         {
+            "question": "Se un prodotto costa $120 e c'\u00e8 uno sconto del 15%, qual \u00e8 il prezzo finale?\nOpzioni:\nA) $10\nB) $97\nC) 102",
+            "answer": "<think>\nop = 120\nd = 15%\ndp = 120 \u00d7 (15 / 100) = 18\nfp = 120 - 18 = 102\n</think>\n\\boxed{C}"
+         },
+         {
+            "question": "Domanda: Un circuito ha una tensione di 12V e una resistenza di 4\u03a9. Qual \u00e8 la corrente?",
+            "answer": "<think>\nV = 12V\nR = 4\u03a9\nI = 12 / 4 = 3A\n</think>\n\\boxed{3}"
+         }
+      ],
+      "expert_lexicons": [
+         {
+            "question": "Contesto: La scoperta del primo oggetto interstellare in transito attraverso il Sistema Solare, 1I/2017 U1 ('Oumuamua), ha suscitato un intenso e continuo interesse sia nella comunit\u00e0 scientifica che nel pubblico generale.\nDomanda: L'oggetto interstellare 1I/2017 U1 ('Oumuamua) ha mostrato caratteristiche insolite che hanno portato a varie ipotesi sulla sua origine. Cosa significa la designazione \"1I/2017 U1\"?\nScelte:\nA) Primo oggetto intergalattico rilevato nel 2017, classificato nella categoria U1\nB) Primo oggetto interstellare catalogato, rilevato nel 2017, secondo le convenzioni di nomenclatura dell'IAU\nC) Primo corpo indipendente non classificato osservato oltre Nettuno nel 2017",
+            "answer": "<think>\n1I \u2192 Primo oggetto interstellare\n2017 \u2192 Anno di rilevamento\nU1 \u2192 ID di sequenza\nIAU \u2192 Regole di nomenclatura\n\u2234 Primo oggetto interstellare catalogato (2017)\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "A un paziente con STEMI viene somministrata la terapia MONA. Ha una storia di allergia all'aspirina. \u00c8 a rischio con questo trattamento?",
+            "answer": "<think>\nSTEMI \u2192 Infarto miocardico con sopraslivellamento del tratto ST\nMONA \u2192 {Morfina, O2, Nitrati, Aspirina}\n\u2234 Aspirina \u2208 MONA\n</think>\n\\boxed{S\u00ec}"
+         },
+         {
+            "question": "Cosa misura l'EBITDA?",
+            "answer": "<think>\nEBITDA \u2192 Utile prima di interessi, imposte, deprezzamento e ammortamento\n\u2234 Misura la redditivit\u00e0 operativa\n</think>\n\\boxed{Redditivit\u00e0 operativa}"
+         }
+      ],
+      "cot": [
+         {
+            "question": "Domanda: \"Se un treno viaggia a 60 miglia all'ora per 3 ore, quanto lontano arriva?\"",
+            "answer": "<think>\n1. Capisco che dobbiamo trovare la distanza totale percorsa da:\n\t- Un treno che si muove a 60 miglia all'ora\n\t- Per una durata di 3 ore\n\n2. Per calcolare la distanza, user\u00f2 la formula:\n\t- Distanza = Velocit\u00e0 \u00d7 Tempo\n\t- Distanza = 60 miglia/ora \u00d7 3 ore\n\n3. Ora eseguir\u00f2 il calcolo:\n\t- Distanza = 60 \u00d7 3 = 180 miglia\n\n4. Verifica:\n\t- Ha senso perch\u00e9 il treno percorre 60 miglia ogni ora\n\t- Dopo 3 ore, avr\u00e0 coperto 3 volte quella distanza\n</think>\n\\boxed{180}"
+         },
+         {
+            "question": "Quale pianeta ha la temperatura superficiale pi\u00f9 alta?\nOpzioni:\nA) Mercurio\nB) Venere\nC) Marte\nD) Giove",
+            "answer": "<think>\n1. Per prima cosa, ricordiamo alcuni fatti di base sui pianeti elencati:\n\t- Mercurio: Il pi\u00f9 vicino al Sole, senza un'atmosfera significativa.\n\t- Venere: Secondo pianeta dal Sole, atmosfera densa con un forte effetto serra.\n\t- Marte: Quarto pianeta dal Sole, atmosfera sottile.\n\t- Giove: Quinto pianeta dal Sole, gigante gassoso senza superficie solida.\n\n2. Consideriamo i fattori che influenzano la temperatura superficiale:\n\t- Prossimit\u00e0 al Sole.\n\t- Composizione e spessore dell'atmosfera.\n\t- Presenza di una superficie solida su cui misurare la temperatura.\n\n3. Valutiamo ciascun pianeta:\n\t- Mercurio: Nonostante sia il pi\u00f9 vicino al Sole, la mancanza di un'atmosfera significa che subisce variazioni estreme di temperatura tra il giorno e la notte.\n\t- Venere: La sua atmosfera densa intrappola il calore a causa di un forte effetto serra, portando a temperature superficiali molto elevate.\n\t- Marte: Essendo pi\u00f9 lontano dal Sole e avendo un'atmosfera sottile, ha temperature pi\u00f9 basse.\n\t- Giove: Essendo un gigante gassoso, non ha una superficie solida, quindi non rientra nei criteri per il confronto della \"temperatura superficiale\".\n\n4. Conclusione:\n\t- Tra i pianeti con una superficie solida, Venere ha la temperatura superficiale pi\u00f9 alta a causa della sua densa atmosfera che intrappola il calore.\n</think>\n\\boxed{B}"
+         }
+      ]
+   },
+   "DE": {
+      "conceptual_chaining": [
+         {
+            "question": "Wie hei\u00dft die W\u00e4hrung, die in Seoul verwendet wird?",
+            "answer": "<think>\n#Seoul \u2192 #S\u00fcdkorea \u2192 Won\n</think>\n\\boxed{Koreanischer Won}"
+         },
+         {
+            "question": "Welcher Planet hat die h\u00f6chste Oberfl\u00e4chentemperatur?\nOptionen:\nA) Merkur\nB) Venus\nC) Mars\nD) Jupiter",
+            "answer": "<think>\n#Hitzefalle\nMerkur \u2192 keine Atmosph\u00e4re \u2192 verliert W\u00e4rme\nVenus \u2192 dicke CO2-Schicht \u2192 speichert W\u00e4rme \u2192 hei\u00dfester Planet\nMars \u2192 d\u00fcnne CO2-Schicht \u2192 kalt\nJupiter \u2192 keine feste Oberfl\u00e4che\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "Welches Vitamin ist essenziell f\u00fcr die Blutgerinnung?",
+            "answer": "<think>\n#Blutgerinnung \u2192 #Vitamin_K\n</think>\n\\boxed{Vitamin K}"
+         }
+      ],
+      "chunked_symbolism": [
+         {
+            "question": "Ein Auto beschleunigt mit 2,5 m/s^2 f\u00fcr 10 Sekunden. Wenn seine Anfangsgeschwindigkeit 15 m/s betr\u00e4gt, wie hoch ist seine Endgeschwindigkeit?",
+            "answer": "<think>\na = 2,5 m/s^2\nt = 10 s\nvi = 15 m/s\nvf = 15 + (2,5 \u00d7 10)\nvf = 40 m/s\n</think>\n\\boxed{40}"
+         },
+         {
+            "question": "Wenn ein Produkt 120 $ kostet und es einen Rabatt von 15 % gibt, wie hoch ist der Endpreis?\nAntwortm\u00f6glichkeiten:\nA) 10 $\nB) 97 $\nC) 102 $",
+            "answer": "<think>\nop = 120\nd = 15%\ndp = 120 \u00d7 (15 / 100) = 18\nfp = 120 - 18 = 102\n</think>\n\\boxed{C}"
+         },
+         {
+            "question": "Frage: Ein Stromkreis hat eine Spannung von 12V und einen Widerstand von 4\u03a9. Wie hoch ist der Strom?",
+            "answer": "<think>\nV = 12V\nR = 4\u03a9\nI = 12 / 4 = 3A\n</think>\n\\boxed{3}"
+         }
+      ],
+      "expert_lexicons": [
+         {
+            "question": "Kontext: Die Entdeckung des ersten interstellaren Objekts, das das Sonnensystem durchquert, 1I/2017 U1 ('Oumuamua), l\u00f6ste gro\u00dfes und anhaltendes Interesse in der wissenschaftlichen Gemeinschaft und der allgemeinen \u00d6ffentlichkeit aus.\nFrage: Das interstellare Objekt 1I/2017 U1 ('Oumuamua) zeigte ungew\u00f6hnliche Eigenschaften, die zu verschiedenen Hypothesen \u00fcber seine Herkunft f\u00fchrten. Was bedeutet die Bezeichnung \"1I/2017 U1\"?\nAntwortm\u00f6glichkeiten:\nA) Erstes intergalaktisches Objekt, das 2017 entdeckt wurde, klassifiziert unter der Kategorie U1\nB) Erstes katalogisiertes interstellares Objekt, entdeckt im Jahr 2017, gem\u00e4\u00df den Benennungsrichtlinien der IAU\nC) Erstes unabh\u00e4ngiges, nicht klassifiziertes Objekt, das jenseits von Neptun im Jahr 2017 beobachtet wurde",
+            "answer": "<think>\n1I \u2192 Erstes interstellares Objekt\n2017 \u2192 Jahr der Entdeckung\nU1 \u2192 Sequenz-ID\nIAU \u2192 Benennungsrichtlinien\n\u2234 Erstes katalogisiertes interstellares Objekt (2017)\n</think>\n\\boxed{B}"
+         },
+         {
+            "question": "Ein Patient mit STEMI erh\u00e4lt eine MONA-Therapie. Er hat eine Vorgeschichte von Aspirinallergie. Besteht ein Risiko mit dieser Behandlung?",
+            "answer": "<think>\nSTEMI \u2192 ST-Hebungsinfarkt\nMONA \u2192 {Morphin, O2, Nitrate, Aspirin}\n\u2234 Aspirin \u2208 MONA\n</think>\n\\boxed{Ja}"
+         },
+         {
+            "question": "Was misst EBITDA?",
+            "answer": "<think>\nEBITDA \u2192 Gewinn vor Zinsen, Steuern, Abschreibungen und Amortisation\n\u2234 Misst die Kernprofitabilit\u00e4t\n</think>\n\\boxed{Kernprofitabilit\u00e4t}"
+         }
+      ],
+      "cot": [
+         {
+            "question": "Frage: \"Wenn ein Zug mit 60 Meilen pro Stunde f\u00fcr 3 Stunden f\u00e4hrt, wie weit kommt er?\"",
+            "answer": "<think>\n1. Ich verstehe, dass wir die gesamte zur\u00fcckgelegte Strecke berechnen m\u00fcssen:\n\t- Ein Zug bewegt sich mit 60 Meilen pro Stunde\n\t- F\u00fcr eine Dauer von 3 Stunden\n\n2. Um die Strecke zu berechnen, verwende ich die Formel:\n\t- Strecke = Geschwindigkeit \u00d7 Zeit\n\t- Strecke = 60 Meilen/Stunde \u00d7 3 Stunden\n\n3. Jetzt f\u00fchre ich die Berechnung durch:\n\t- Strecke = 60 \u00d7 3 = 180 Meilen\n\n4. \u00dcberpr\u00fcfung:\n\t- Das ergibt Sinn, da der Zug jede Stunde 60 Meilen zur\u00fccklegt\n\t- Nach 3 Stunden hat er die dreifache Strecke zur\u00fcckgelegt\n</think>\n\\boxed{180}"
+         },
+         {
+            "question": "Welcher Planet hat die h\u00f6chste Oberfl\u00e4chentemperatur?\nAntwortm\u00f6glichkeiten:\nA) Merkur\nB) Venus\nC) Mars\nD) Jupiter",
+            "answer": "<think>\n1. Zuerst rufe ich mir einige grundlegende Fakten \u00fcber die aufgef\u00fchrten Planeten ins Ged\u00e4chtnis:\n\t- Merkur: Am n\u00e4chsten zur Sonne, keine nennenswerte Atmosph\u00e4re.\n\t- Venus: Zweiter Planet von der Sonne, dichte Atmosph\u00e4re mit starkem Treibhauseffekt.\n\t- Mars: Vierter Planet von der Sonne, d\u00fcnne Atmosph\u00e4re.\n\t- Jupiter: F\u00fcnfter Planet von der Sonne, Gasriese ohne feste Oberfl\u00e4che.\n\n2. Faktoren, die die Oberfl\u00e4chentemperatur beeinflussen:\n\t- N\u00e4he zur Sonne.\n\t- Zusammensetzung und Dichte der Atmosph\u00e4re.\n\t- Vorhandensein einer festen Oberfl\u00e4che zur Messung der Temperatur.\n\n3. Bewertung der einzelnen Planeten:\n\t- Merkur: Obwohl er der Sonne am n\u00e4chsten ist, f\u00fchrt das Fehlen einer Atmosph\u00e4re zu extremen Temperaturschwankungen zwischen Tag und Nacht.\n\t- Venus: Ihre dichte Atmosph\u00e4re speichert W\u00e4rme aufgrund eines starken Treibhauseffekts, was zu sehr hohen Oberfl\u00e4chentemperaturen f\u00fchrt.\n\t- Mars: Aufgrund der gr\u00f6\u00dferen Entfernung zur Sonne und der d\u00fcnnen Atmosph\u00e4re sind die Temperaturen niedriger.\n\t- Jupiter: Als Gasriese hat er keine feste Oberfl\u00e4che, sodass er nicht f\u00fcr einen Vergleich der \u201eOberfl\u00e4chen\u201c-Temperaturen geeignet ist.\n\n4. Fazit:\n\t- Unter den Planeten mit einer festen Oberfl\u00e4che hat die Venus die h\u00f6chste Oberfl\u00e4chentemperatur, da ihre dichte Atmosph\u00e4re W\u00e4rme speichert.\n</think>\n\\boxed{B}"
+         }
+      ]
+   }
+}
