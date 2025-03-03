@@ -1,6 +1,6 @@
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 import torch
-from config.config import default_path
+from .config.config import default_path
 import json
 import os
 import copy
