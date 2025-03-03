@@ -42,7 +42,7 @@ development = [
 [project.urls]
 "Homepage" = "https://github.com/SimonAytes/SoT"
 "Documentation" = "https://github.com/SimonAytes/SoT#README.md"
-"Source Code" = ""https://github.com/SimonAytes/SoT"
+"Source Code" = "https://github.com/SimonAytes/SoT"
 "Hugging Face Model" = "https://huggingface.co/saytes/SoT_DistilBERT"
 
 [tool.setuptools.packages.find]
