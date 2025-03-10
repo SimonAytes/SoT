@@ -281,11 +281,14 @@ The SoT_DistilBERT model was evaluated on the following datasets:
 If you find our work helpful, please cite:
 
 ```
-@article{TBD,
-  title={TBD},
-  author={TBD},
-  journal={TBD},
-  year={TBD}
+@misc{aytes2025sot,
+      title={Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching}, 
+      author={Simon A. Aytes and Jinheon Baek and Sung Ju Hwang},
+      year={2025},
+      eprint={2503.05179},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.05179}, 
 }
 ```
 
