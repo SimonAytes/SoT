@@ -1,9 +1,11 @@
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 import torch
 from .config.config import default_path
+from .config.warnings import *
 import json
 import os
 import copy
+from loguru import logger
 
 class SoT:
     def __init__(self):
@@ -80,12 +82,14 @@ class SoT:
         return copy.deepcopy(self.PROMPT_CACHE[language_code][paradigm])
     
         
-    def get_initialized_context(self, paradigm, language_code="EN", include_system_prompt=True, format="llm"):
+    def get_initialized_context(self, paradigm, question=None, image_data=None, language_code="EN", include_system_prompt=True, format="llm"):
         """
         Retrieves the preloaded conversation context for the given paradigm and language.
         Dynamically inserts the user's question and system prompt.
 
         :param paradigm: The reasoning paradigm ("conceptual_chaining", "chunked_symbolism", "expert_lexicons", "cot").
+        :param question: The user's question to be added to the context. If `None` or empty, it will not be added.
+        :param image_data: The image associated with the user's question. Required `format="vlm"`.
         :param language_code: The language code (e.g., "KR" for Korean).
         :param include_system_prompt: Whether to add the system prompt to the context. Not available in raw format.
         :param format: The format to return. Accepted values are: `llm`, `raw`, or `vlm`.
@@ -96,6 +100,10 @@ class SoT:
         assert language_code in self.avalilable_languages(), f"`{language_code}` is not a compatible language!"
 
         if format.lower() == "llm":
+            # Warn for multimodal misalignment
+            if image_data:
+                logger.warning(MULTIMODAL_MISALIGNMENT)
+            
             exemplars = self.CONTEXT_CACHE[language_code][paradigm]
             if include_system_prompt:
                 context = [{"role": "system", "content": self.get_system_prompt(paradigm=paradigm, language_code=language_code)}]
@@ -107,9 +115,18 @@ class SoT:
                     {"role": "user", "content": ex['question']},
                     {"role": "assistant", "content": ex['answer']},
                 ]
+            
+            # Add user question, if it exists
+            if question and question != "":
+                context += [{"role": "user", "content": question}]
+
             return context
         
         elif format.lower() == "vlm":
+            # Warn for missing image
+            if image_data is None:
+                logger.warning(NO_IMAGE)
+            
             exemplars = self.CONTEXT_CACHE[language_code][paradigm]
             if include_system_prompt:
                 context = [{"role": "system", "content": [{"type": "text", "text": self.get_system_prompt(paradigm=paradigm, language_code=language_code)}]}]
@@ -121,6 +138,10 @@ class SoT:
                     {"role": "user", "content": [{"type": "text", "text": ex['question']}]},
                     {"role": "assistant", "content": [{"type": "text", "text": ex['answer']}]},
                 ]
+            
+            # Add user question, if it exists
+            if question and question != "":
+                context = [{"role": "user", "content": [{"type": "text", "text": question}, {"type": "image", "image": image_data}]}]
             return context
         
         else:  # Default case, return raw format
