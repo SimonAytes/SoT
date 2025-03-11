@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org/)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Compatible-yellow)](https://huggingface.co/saytes/SoT_DistilBERT)
+[![Hugging Face](https://img.shields.io/badge/arxiv-paper-blue)](https://arxiv.org/abs/2503.05179)
 
 ## Introduction
 
