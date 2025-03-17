@@ -155,11 +155,11 @@ SoT provides several utility functions:
 
 ```python
 # List available reasoning paradigms
-sot.available_paradigms()
+sot.avaliable_paradigms()
 # Returns: ['chunked_symbolism', 'conceptual_chaining', 'expert_lexicons']
 
 # List supported languages
-sot.available_languages()
+sot.avalilable_languages()
 # Returns: ['EN', 'KR', 'IT', 'DE']
 
 # Get formatted context without a question
