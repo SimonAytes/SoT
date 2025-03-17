@@ -56,13 +56,13 @@ class SoT:
         with open(self.__CONTEXT_PATH_BASE, "r") as f:
             self.CONTEXT_CACHE = json.load(f)
     
-    def avalilable_languages(self):
+    def availlable_languages(self):
         """
         Lists all currently supported languages.
         """
         return self.__LANGUAGE_CODES
 
-    def avaliable_paradigms(self):
+    def available_paradigms(self):
         """
         Returns list of all currently supported paradigms.
         """
