@@ -56,7 +56,7 @@ class SoT:
         with open(self.__CONTEXT_PATH_BASE, "r") as f:
             self.CONTEXT_CACHE = json.load(f)
     
-    def availlable_languages(self):
+    def available_languages(self):
         """
         Lists all currently supported languages.
         """
@@ -76,8 +76,8 @@ class SoT:
         :param language_code: The language code (e.g., "EN" for English, "KR" for Korean, etc.).
         :return: The content of the corresponding prompt file or None if not found.
         """
-        assert paradigm in self.avaliable_paradigms(), f"`{paradigm}` is not a recognized paradigm!"
-        assert language_code in self.avalilable_languages(), f"`{language_code}` is not a compatible language!"
+        assert paradigm in self.available_paradigms(), f"`{paradigm}` is not a recognized paradigm!"
+        assert language_code in self.available_languages(), f"`{language_code}` is not a compatible language!"
         
         return copy.deepcopy(self.PROMPT_CACHE[language_code][paradigm])
     
@@ -96,7 +96,7 @@ class SoT:
         :return: The full initialized conversation list.
         """
 
-        assert paradigm in self.avaliable_paradigms(), f"`{paradigm}` is not a recognized paradigm!"
+        assert paradigm in self.available_paradigms(), f"`{paradigm}` is not a recognized paradigm!"
         assert language_code in self.avalilable_languages(), f"`{language_code}` is not a compatible language!"
 
         if format.lower() == "llm":
