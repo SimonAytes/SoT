@@ -17,7 +17,6 @@ authors = [
 dependencies = [
     "transformers>=4.37.0",
     "torch>=2.0.0",
-    "numpy>=2.2.0",
     "tqdm>=4.67.0",
     "huggingface-hub>=0.29.0",
     "tokenizers>=0.21.0",
