@@ -97,7 +97,7 @@ class SoT:
         """
 
         assert paradigm in self.available_paradigms(), f"`{paradigm}` is not a recognized paradigm!"
-        assert language_code in self.avalilable_languages(), f"`{language_code}` is not a compatible language!"
+        assert language_code in self.available_languages(), f"`{language_code}` is not a compatible language!"
 
         if format.lower() == "llm":
             # Warn for multimodal misalignment
