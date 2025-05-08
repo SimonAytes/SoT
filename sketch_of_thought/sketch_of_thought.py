@@ -141,7 +141,7 @@ class SoT:
             
             # Add user question, if it exists
             if question and question != "":
-                context = [{"role": "user", "content": [{"type": "text", "text": question}, {"type": "image", "image": image_data}]}]
+                context += [{"role": "user", "content": [{"type": "text", "text": question}, {"type": "image", "image": image_data}]}]
             return context
         
         else:  # Default case, return raw format
